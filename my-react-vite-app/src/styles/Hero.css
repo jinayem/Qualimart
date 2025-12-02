@@ -1,0 +1,33 @@
+/* src/styles/Hero.css */
+
+/* The following styles the hero section */
+.hero {
+  height: 80vh; /* Full viewport height */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content */
+  text-align: center; /* Center text */
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-position: center; /* Center the background image */
+}
+
+/* The following styles the content inside the hero section */
+.hero-content {
+  color: white; /* White text for contrast */
+  max-width: 600px; /* Limit the width for better readability */
+}
+
+/* The following styles the button */
+.cta-button {
+  padding: 12px 24px; /* Increased padding */
+  font-size: 1.2rem; /* Increased font size */
+  background-color: #ff7f50; /* Coral color */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: 0.3s; /* Smooth transition for hover effect */
+}
+
+/* The following styles the button on hover */
+.cta-button:hover {
+  background-color: #ff5722; /* Darker shade on hover */
+}

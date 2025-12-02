@@ -1,0 +1,112 @@
+/* src/styles/BestDeals.css */
+
+/* The following styles are for the main container */
+.best-deals-container {
+  padding: 2.5rem 1rem; /* Increased padding for better spacing */
+  background-color: #f7fafc; /* Light background color */
+  text-align: center; /* Center align text */
+}
+
+/* The following styles are for the title */
+.best-deals-title {
+  font-size: 2rem; /* Increased font size for better visibility */
+  font-weight: bold; /* Changed to bold for better emphasis */
+  color: #ff6600; /* Changed to a more vibrant color */
+  margin-bottom: 1.5rem; /* Increased margin for better spacing */
+}
+
+/* The following styles are for the slider container */
+.best-deals-slider-container {
+  max-width: 80rem; /* Increased max width for better layout */
+  margin: 0 auto; /* Centers the slider */
+  padding: 10px; /* Added padding for better spacing */
+}
+
+/* The following styles are for the link wrapping each slide */
+.best-deal-link {
+  text-decoration: none; /* Removes underline from link */
+  color: inherit; /* Inherits color from parent */
+  display: block; /* Makes the entire slide clickable */
+  transition: transform 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* The following styles are for the hover effect on the link */
+.best-deal-link:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* The following styles are for the swiper slide */
+.swiper-slide {
+  background: #fff; /* White background for each slide */
+  padding: 20px 0 0 0; /* Padding top only for better spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Evenly space content */
+  height: 100%; /* Ensures uniform height */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/*The following styles are for the hover effect on each slide */
+.swiper-slide:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* The following styles are for the image wrapper */
+.best-deal-image-wrapper {
+  width: 100%; /* Full width of the slide */
+  height: 200px; /* Adjust height as needed */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  overflow: hidden; /* Prevents image overflow */
+}
+
+/* The following styles are for the product image */
+.best-deal-image {
+  max-width: 100%; /* Ensures image does not exceed container */
+  max-height: 100%; /* Ensures image does not exceed container */
+  object-fit: contain; /* Ensures image fits without overflow */
+  border-radius: 0.5rem; /* Slightly rounded corners */
+}
+
+/* The following styles are for the info section */
+.best-deal-info {
+  text-align: center; /* Center align text */
+  padding: 10px; /* Added padding for better spacing */
+}
+
+/* The following styles are for the product name */
+.best-deal-name {
+  font-size: 1.125rem; /* Increased font size for better readability */
+  font-weight: 600; /* Semi-bold for better emphasis */
+  margin-top: 0.75rem; /* Added margin for spacing */
+  color: #333; /* Darker text for better readability */
+}
+
+/* The following styles are for the price */
+.best-deal-price {
+  color: #1e40af; /* Changed to a more appealing blue color */
+  font-weight: bold; /* Bold price for emphasis */
+  font-size: 1.25rem; /* Increased font size for better visibility */
+}
+
+/* The following styles are for responsiveness */
+@media (max-width: 768px) {
+  .best-deals-slider-container {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+
+  /* The following styles are for the swiper slide */
+  .swiper-slide {
+    padding: 1rem; /* Reduced padding for smaller screens */
+  }
+
+  /* The following styles are for the image wrapper */
+  .best-deal-image-wrapper {
+    height: 150px; /* Reduce height for smaller screens */
+  }
+}

@@ -1,0 +1,59 @@
+##############################################
+# 1. DEPENDENCY & ENVIRONMENT DIRECTORIES
+# (Crucial to ignore recursively in multi-project repos)
+##############################################
+
+# Node Modules (Ignores node_modules in ANY subdirectory)
+**/node_modules/
+
+# Python Virtual Environments (Ignores venv/ and env/ in ANY subdirectory)
+**/venv/
+**/env/
+
+##############################################
+# 2. BUILD, LOCK & OUTPUT FILES
+##############################################
+
+# Build Output (Vite, general build directories)
+dist/
+.build/
+
+# Node Lock/Error Files
+npm-debug.log*
+yarn-error.log
+pnpm-lock.yaml
+package-lock.json
+
+# Python Compilation Cache
+__pycache__/
+*.pyc
+
+# Test/Coverage Reports
+coverage/
+*.tgz
+
+##############################################
+# 3. SECRETS & CONFIGURATION (Crucial for Security)
+##############################################
+
+# Environment Variables (Ignore all local and sensitive settings)
+.env
+.env.local
+.env.*.local
+*.env
+
+##############################################
+# 4. OPERATING SYSTEM & IDE FILES
+##############################################
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE Configuration (User-specific settings)
+.vscode/
+.idea/
+
+# General Logs
+logs/
+*.log

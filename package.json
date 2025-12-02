@@ -1,0 +1,21 @@
+{
+  "name": "react-vite-monorepo-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Root package for centralized tooling, configuration, and scripts for the full-stack application.",
+  "scripts": {
+    "start": "echo 'To start, run the client and server separately or update this script with an orchestrator.'",
+    "setup:all": "npm install && cd my-react-vite-app && npm install",
+    "test:full": "npm run test --prefix my-react-vite-app && npm run test --prefix backend",
+    "lint:all": "npm run lint --prefix my-react-vite-app"
+  },
+  "keywords": [
+    "monorepo",
+    "react",
+    "vite",
+    "full-stack"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}

@@ -1,0 +1,76 @@
+/* styles/Testimonials.css */
+
+/* The following styles are for the testimonials section container */
+.testimonials-container {
+  padding: 2.5rem 1rem; /* Padding around the container */
+  background-color: #f7fafc; /* Light background color */
+  text-align: center; /* Centering text */
+}
+
+/* The following styles are for the section title */
+.testimonials-title {
+  font-size: 2rem; /* The font size is set to 2rem for better visibility */
+  font-weight: bold; /* This ensures the title is bold */
+  color: #ff6600; /* The color is set to a vibrant orange */
+  margin-bottom: 1.5rem; /* This ensures space between title and slider */
+}
+
+/* The following styles are for the Swiper slider */
+.testimonials-slider {
+  max-width: 80rem; /* Maximum width for larger screens */
+  margin: 0 auto; /* Centering the slider */
+  padding: 10px; /* Padding around the slider */
+}
+
+/* The following styles are for individual Swiper slides */
+.swiper-slide {
+  background: transparent; /* Transparent background for slides */
+  box-shadow: none; /* No shadow for slides */
+  padding: 0; /* No padding for slides */
+}
+
+/* The following styles are for individual testimonial cards */
+.testimonial-card {
+  background: #fff; /* White background for the card */
+  padding: 1.5rem; /* Padding inside the card */
+  border-radius: 0.75rem; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Centering text inside the card */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* The following styles add interactivity on hover */
+.testimonial-card:hover {
+  transform: scale(1); /* Slightly enlarge the card */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* The following styles are for the testimonial author's image */
+.testimonial-img {
+  width: 5rem; /* width of the image */
+  height: 5rem; /* Fixed size for uniformity */
+  border-radius: 50%; /* This makes the image circular */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  margin-bottom: 1rem; /* Space between image and text */
+}
+
+/* The following styles are for the testimonial review text */
+.testimonial-review {
+  font-size: 1rem; /* Standard font size for readability */
+  color: #555; /* A medium gray color for the text */
+  margin-bottom: 1rem; /* Space between review and name */
+}
+
+/* The following styles are for the testimonial author's name */
+.testimonial-name {
+  font-size: 1.125rem; /* Slightly larger font size for the name */
+  font-weight: bold; /* Bold font for emphasis */
+  color: #333; /* The color is set to a darker shade for emphasis */
+}
+
+/* The following media query ensures responsiveness */
+@media (max-width: 768px) {
+  .testimonials-slider {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}

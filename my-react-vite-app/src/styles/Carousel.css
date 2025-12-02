@@ -1,0 +1,79 @@
+/* Carousel.css */
+
+/* The following styles the main carousel container */
+.carousel-container {
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Limit max width for large screens */
+  margin: 0 auto; /* Center the carousel */
+  position: relative; /* Ensure positioning context for pagination */
+  border-radius: 10px; /* Rounded corners for better aesthetics */
+  overflow: hidden; /* Ensure slides don't overflow */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Enhanced shadow for depth */
+  padding: 0; /* Remove any default padding */
+  box-sizing: border-box; /* Ensure padding/border included in size */
+}
+
+/* The following ensures the Swiper fills the container */
+.my-swiper, .swiper {
+  width: 100% !important; /* Override any width */
+  height: 100%; /* Ensure it fills the container */
+  box-sizing: border-box; /* Ensure padding/border included in size */
+}
+
+/* The following ensures the wrapper fills the container */
+.my-swiper .swiper-wrapper {
+  align-items: stretch; /* Ensure slides stretch to container height */
+  box-sizing: border-box; /* Ensure padding/border included in size */
+}
+
+/* The following ensures each slide fills the container */
+.my-swiper .swiper-slide {
+  width: 100% !important; /* Override any width */
+  max-width: none !important; /* Override any max-width */
+  display: flex; /* Use flexbox for centering content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  box-sizing: border-box; /* Ensure padding/border included in size */
+  padding: 0; /* Remove any default padding */
+  margin: 0; /* Remove any default margin */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* The following styles each slide */
+.carousel-slide {
+  position: relative; /* For positioning text over image */
+  width: 100%; /* Full width of container */
+  height: 400px; /* Fixed height for consistency */
+  overflow: hidden; /* Ensure images don't overflow */
+  display: block; /* Ensure block-level for proper sizing */
+  box-sizing: border-box; /* Ensure padding/border included in size */
+}
+
+/* The following makes images cover the slide area */
+.carousel-image {
+  width: 100%; /* Fill the slide area */
+  height: 100%; /* Fill the slide area */
+  object-fit: cover; /* Cover the entire slide area */
+  display: block; /* Remove inline image whitespace */
+}
+
+/* The following prevents image dragging and selection */
+.carousel-text {
+  position: absolute; /* Position text over image */
+  bottom: 30px; /* Position text above bottom */
+  left: 40px; /* Position text away from edges */
+  background-color: rgba(0,0,0,0.5); /* Semi-transparent background for readability */
+  padding: 20px 25px; /* Padding for better readability */
+  border-radius: 8px; /* Rounded corners for better aesthetics */
+  color: white; /* Ensure text is white for contrast */
+  max-width: 60%; /* Limit width for readability */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* The following ensures text is readable on various image backgrounds */
+@media (max-width: 768px) {
+  .carousel-slide { height: 250px; } /* Smaller height on mobile */
+  .carousel-text { bottom: 20px; left: 20px; padding: 15px; max-width: 90%; } /* Adjust text box on smaller screens */
+  .carousel-text h2 { font-size: 1.5rem; } /* Slightly smaller title on mobile */
+  .carousel-text p { font-size: 0.9rem; } /* Slightly smaller text on mobile */
+}

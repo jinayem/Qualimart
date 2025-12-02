@@ -1,0 +1,54 @@
+/* src/styles/Categories.css */
+
+/* The following styles define the overall layout and appearance of the categories section */
+.categories {
+    padding: 50px 20px; /* Reduced padding for a more compact layout */
+    text-align: center; /* Center align text */
+    background: #fffaf0; /* Light background color for better contrast */
+  }
+  
+  /* The following styles enhance the appearance of the main heading */
+  .categories h2 {
+    font-size: 28px; /* Reduced font size for better fit */
+    margin-bottom: 20px; /* Reduced margin for better spacing */
+    color: #ff5722; /* Accent color for headings */
+  }
+  
+  /* The following styles create a responsive grid layout for category cards */
+  .category-grid {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Reduced gap for a more compact layout */
+    justify-content: center; /* Center the grid items */
+  }
+  
+  /* The following styles define the appearance of each category card */
+  .category-card {
+    background: white; /* White background for cards */
+    padding: 15px; /* Reduced padding for a more compact look */
+    border-radius: 10px; /* Rounded corners for cards */
+    text-align: center; /* Center text inside cards */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  /* The following styles add a hover effect to category cards */
+  .category-card:hover {
+    transform: scale(1.1); /* Slightly enlarge the card on hover */
+  }
+  
+  /* The following styles ensure that category images are uniform in size and appearance */
+  .category-card img {
+    width: 100px; /* Fixed width for uniformity */
+    height: 100px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    border-radius: 10px; /* Rounded corners for images */
+  }
+  
+  /* The following styles improve the appearance of category names */
+  .category-card h3 {
+    font-size: 16px; /* Reduced font size for better fit */
+    margin-top: 10px; /* Reduced margin for better spacing */
+    color: #333; /* Darker text color for better readability */
+  }
+  

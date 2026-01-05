@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import "../styles/Navbar.css";
+import "./Navbar.css";
 import { FaBars, FaTimes, FaShoppingCart, FaUser, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../../context/CartContext";
+import PropTypes from 'prop-types';
 
 const Navbar = ({ onSearch }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -94,6 +95,10 @@ const Navbar = ({ onSearch }) => {
       </div>
     </nav>
   );
+};
+
+Navbar.propTypes = {
+  onSearch: PropTypes.func.isRequired,
 };
 
 export default Navbar;

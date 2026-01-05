@@ -1,7 +1,7 @@
 // Footer.jsx
-import React from "react";
-import "../styles/Footer.css";
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaPhoneAlt, FaMapMarkerAlt, FaGlobe, FaRegQuestionCircle, FaCcVisa, FaCcMastercard, FaCcPaypal, FaLock } from "react-icons/fa";
+// import React from "react";
+import "./Footer.css";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaPhoneAlt, FaMapMarkerAlt, FaGlobe, FaCcVisa, FaCcMastercard, FaCcPaypal, FaLock } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -79,7 +79,7 @@ const Footer = () => {
           </select>
         </div>
         <p className="footer-copyright">
-          © 2025 Qualimart. All Rights Reserved.
+          © 2026 Qualimart. All Rights Reserved.
         </p>
       </div>
     </footer>

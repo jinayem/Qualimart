@@ -1,12 +1,12 @@
-import React from "react";
+// import React from "react";
 import { Link } from "react-router-dom"; // ✅ Import Link for navigation
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "../styles/BestDeals.css"; // Importing CSS
-import products from "../data/products";
+import "./BestDeals.css";
+import products from "../../data/products";
 
 const BestDeals = () => {
   // Ensure products is loaded before mapping
@@ -40,7 +40,7 @@ const BestDeals = () => {
                 <div className="best-deal-card">
                   <div className="best-deal-image-wrapper">
                     <img
-                      src={`/assets/${product.name.toLowerCase().replace(/\s+/g, "-")}.jpg`}
+                      src={product.images[0]}
                       alt={product.name}
                       className="best-deal-image"
                       onError={(e) => (e.target.style.display = "none")}

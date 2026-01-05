@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 import { Link } from "react-router-dom"; // ✅ Import Link from react-router-dom
-import products from "../data/products";
-import "../styles/FeaturedProducts.css";
+import products from "../../data/products";
+import "./FeaturedProducts.css";
 
 const FeaturedProducts = () => {
   return (
@@ -20,7 +20,7 @@ const FeaturedProducts = () => {
 
             {/* Product Image */}
             <img
-              src={`/assets/${product.name.toLowerCase().replace(/\s+/g, "-")}.jpg`}
+              src={product.images[0]}
               alt={product.name}
               className="featured-image"
             />

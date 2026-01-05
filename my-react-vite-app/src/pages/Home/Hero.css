@@ -7,6 +7,7 @@
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content */
   text-align: center; /* Center text */
+  background-image: url('../../assets/images/hero/hero-desktop.webp'); /* Desktop background image */
   background-size: cover; /* Ensure the background image covers the entire section */
   background-position: center; /* Center the background image */
 }
@@ -30,4 +31,16 @@
 /* The following styles the button on hover */
 .cta-button:hover {
   background-color: #ff5722; /* Darker shade on hover */
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    background-image: url('../../assets/images/hero/hero-tablet.webp'); /* Tablet background image */
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    background-image: url("../../assets/images/hero/hero-mobile.webp"); /* Mobile background image */
+  }
 }

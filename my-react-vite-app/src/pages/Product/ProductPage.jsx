@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
-import products from "../data/products";
-import "../styles/ProductPage.css";
-import Navbar from "../components/Navbar";
-import { useCart } from "../context/CartContext"; // ✅
+import products from "../../data/products";
+import "./ProductPage.css";
+import Navbar from "../../components/Navbar/Navbar";
+import { useCart } from "../../context/CartContext";
 
 const ProductPage = () => {
   const { id } = useParams();

@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/Home.css";
-import Navbar from "./Navbar";
-import Carousel from "./Carousel"; // ✅ Added Carousel import
+import "./Home.css";
+import Navbar from "../../components/Navbar/Navbar";
+import Carousel from "../../components/Carousel/Carousel";
 import BestDeals from "./BestDeals";
 import Hero from "./Hero";
 import Categories from "./Categories";
 import FeaturedProducts from "./FeaturedProducts";
 import Testimonials from "./Testimonials";
-import Footer from "./Footer";
-import productsData from "../data/products";
+import Footer from "../../components/Footer/Footer";
+import productsData from "../../data/products";
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -24,7 +24,7 @@ const Home = () => {
 
       {searchQuery ? (
         <div className="search-results">
-          <h2>Search Results for "{searchQuery}"</h2>
+          <h2>Search Results for &quot;{searchQuery}&quot;</h2>
           {filteredProducts.length > 0 ? (
             <div className="product-list">
               {filteredProducts.map((product) => (

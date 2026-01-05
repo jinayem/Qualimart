@@ -1,17 +1,19 @@
 // components/Testimonials.jsx
 
-// Importing necessary libraries and styles
-import React from "react";
-import "../styles/Testimonials.css"; // Importing CSS
+// The following code is not necessary as React 17+ with new JSX transform doesn't require explicit React import
+// import React from "react";
+
+// Importing necessary modules and styles
+import "./Testimonials.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-// Importing imgaes from src/assets/testimonials
-import sarah from "../assets/testimonials/sarah.svg";
-import michael from "../assets/testimonials/michael.svg";
-import emily from "../assets/testimonials/emily.svg";
+// Importing images from src/assets/images/testimonials
+import sarah from "../../assets/images/testimonials/sarah.svg";
+import michael from "../../assets/images/testimonials/michael.svg";
+import emily from "../../assets/images/testimonials/emily.svg";
 
 // The following array contains testimonial data
 const testimonials = [
@@ -86,7 +88,7 @@ const Testimonials = () => {
           <SwiperSlide key={testimonial.id}>
             <div className="testimonial-card">
               <img src={testimonial.image} alt={testimonial.name} className="testimonial-img" />
-              <p className="testimonial-review">"{testimonial.review}"</p>
+              <p className="testimonial-review">&quot;{testimonial.review}&quot;</p>
               <h4 className="testimonial-name">{testimonial.name}</h4>
             </div>
           </SwiperSlide>
